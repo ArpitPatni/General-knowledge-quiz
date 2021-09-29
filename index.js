@@ -2,6 +2,7 @@
 var readlineSync=require("readline-sync");
 var userName=readlineSync.question("Enter your Name \n");
 console.log("HEY WELCOME TO THE QUIZ MADE BY ARPIT PATNI \n");
+console.log("Give answers as a ,b ,c \n");
 
 var score=0;
 
@@ -22,7 +23,7 @@ function play(question,answer)
 
 var  highestScore={
   name:"Arpit",
-  score:"3" 
+  score:"5" 
 }
 
 question1={
@@ -38,8 +39,16 @@ question3={
   question:"Who is the Prime Minister of India ?\n a.Narendra Modi \n b.Manmohan Singh \n c.Rahul Gandhi \n",
   answer:'a'
 }
+question4={
+  question:"National Bird of India ?\n a.The Indian Peacock \n b.Pigeon \n c.WoodPecker \n",
+  answer:'a'
+}
+question5={
+  question:"How many Colors does Rainbow Have ?\n a.Eight \n b.Nine \n c.Seven \n",
+  answer:'c'
+}
 
-var questions=[question1,question2,question3];
+var questions=[question1,question2,question3,question4,question5];
 
 for(var i=0;i<questions.length;i++)
 {
